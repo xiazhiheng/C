@@ -1,6 +1,0 @@
-#忽略.vscode文件夹
-.vscode/
-exe/
-#忽略.exe文件
-*.exe
-*.gitigonre
