@@ -143,9 +143,23 @@ void Convert(char *str){
 
         }
         c2 = '\n';//c2恢复初始化
-      }
+      }else{//运算符
+        while(true){
+          if(EmptyOpStack(stack)){
+            GetOpStack(stack,&c2);
+            if(Priority(c)<=Priority(c2)){
+              PopOpStack(stack,&c2);
+              /*实现拼接字符串*/
 
-     
+            }else{
+              break;
+            }
+          }else{
+            break;
+          }
+        }
+        PushOpStack(stack,c);
+      }
     }
   }
 }
