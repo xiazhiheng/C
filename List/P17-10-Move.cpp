@@ -1,6 +1,7 @@
+//将数组元素整体向左移动，以移动2位为例
 #include<iostream>
 using namespace std;
-void Reverse(int *S,int h,int f);
+void Reverse(int *S,int h,int f);//反转
 int main(){
   int S[]={1,2,3,4,5,6,7,8};
   Reverse(S,0,1);

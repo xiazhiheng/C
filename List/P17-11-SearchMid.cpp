@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int SearchMid(int *S1,int *S2,int n);
+int SearchMid(int *S1,int *S2,int n);//寻找两个数组的中位数（第n小的数）
 int main(){
   int S1[] = {1,2,3,4,5,6,7,10};
   int S2[] = {9,9,10,11,12,13,14,15};

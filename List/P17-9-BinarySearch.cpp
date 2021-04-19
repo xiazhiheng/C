@@ -7,7 +7,7 @@ typedef struct{
 }SqList;
 bool Init(SqList *list);
 bool Add(SqList *list,int data);
-int Binary(SqList list,int n);
+int Binary(SqList list,int n);//二分查找
 int main(){
   SqList list;
   Init(&list);
@@ -58,7 +58,6 @@ int Binary(SqList list,int n){
       left = mid+1;
     }
     mid = left+(right-left)/2;
-    // printf("left=%d,right=%d,mid=%d\n",left,right,mid);
   }
   return mid;
 }
